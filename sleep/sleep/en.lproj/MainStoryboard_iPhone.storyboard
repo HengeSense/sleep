@@ -1,23 +1,123 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFC-rT-9de">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AaI-gd-38F" kind="modal" id="UCN-jh-IqO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kFC-rT-9de" secondAttribute="bottom" constant="68" id="2KJ-dc-WJJ"/>
+                            <constraint firstItem="kFC-rT-9de" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="hFV-9r-eL6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="9IG-Eg-u3N">
+            <objects>
+                <viewController storyboardIdentifier="" id="AaI-gd-38F" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FJ7-D6-kfC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ppJ-Yv-YyL" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gz7-Wb-Qz8" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asj-oc-Xe8" customClass="UISimpleButton">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="login">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRi-fv-Fvh" customClass="UISimpleButton">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="create account">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsC-xR-n5i">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="nem-df-uqm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qsC-xR-n5i" firstAttribute="centerX" secondItem="ppJ-Yv-YyL" secondAttribute="centerX" type="default" id="1dW-RN-1bx"/>
+                            <constraint firstItem="asj-oc-Xe8" firstAttribute="top" secondItem="gz7-Wb-Qz8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1j1-7K-dcQ"/>
+                            <constraint firstAttribute="trailing" secondItem="asj-oc-Xe8" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3D0-6e-ABw"/>
+                            <constraint firstItem="gz7-Wb-Qz8" firstAttribute="leading" secondItem="FJ7-D6-kfC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8S6-6c-qeU"/>
+                            <constraint firstItem="ppJ-Yv-YyL" firstAttribute="leading" secondItem="FJ7-D6-kfC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8bO-w1-m5s"/>
+                            <constraint firstItem="ppJ-Yv-YyL" firstAttribute="top" secondItem="qsC-xR-n5i" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="DSz-v0-lAS"/>
+                            <constraint firstAttribute="trailing" secondItem="gz7-Wb-Qz8" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="HwC-fp-K0s"/>
+                            <constraint firstAttribute="bottom" secondItem="sRi-fv-Fvh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="MTs-pS-Rks"/>
+                            <constraint firstItem="qsC-xR-n5i" firstAttribute="top" secondItem="FJ7-D6-kfC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Qeg-Xc-fBd"/>
+                            <constraint firstItem="sRi-fv-Fvh" firstAttribute="centerX" secondItem="gz7-Wb-Qz8" secondAttribute="centerX" type="default" id="Ypu-4J-ZmF"/>
+                            <constraint firstItem="gz7-Wb-Qz8" firstAttribute="top" secondItem="ppJ-Yv-YyL" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="euc-2e-RBu"/>
+                            <constraint firstAttribute="trailing" secondItem="ppJ-Yv-YyL" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jZQ-Si-Bdg"/>
+                            <constraint firstItem="ppJ-Yv-YyL" firstAttribute="top" secondItem="FJ7-D6-kfC" secondAttribute="top" constant="156" id="ydN-dj-4kU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZkY-37-em1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGS-Kz-txt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="-29"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="LoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UISimpleButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UISimpleButton.h"/>
+        </class>
+        <class className="UISimpleTextField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UISimpleTextField.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

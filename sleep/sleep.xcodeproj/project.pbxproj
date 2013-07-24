@@ -19,6 +19,10 @@
 		4E23BED517A01B8100FF1906 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BED317A01B8100FF1906 /* MainStoryboard_iPhone.storyboard */; };
 		4E23BED817A01B8100FF1906 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BED617A01B8100FF1906 /* MainStoryboard_iPad.storyboard */; };
 		4E23BEDB17A01B8100FF1906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEDA17A01B8100FF1906 /* ViewController.m */; };
+		4E23BEE417A01CF800FF1906 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEE317A01CF800FF1906 /* LoginViewController.m */; };
+		4E23BEE617A01D9900FF1906 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BEE517A01D9900FF1906 /* QuartzCore.framework */; };
+		4E23BEED17A0278600FF1906 /* UISimpleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */; };
+		4E23BEF017A02E7D00FF1906 /* UISimpleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,13 @@
 		4E23BED717A01B8100FF1906 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		4E23BED917A01B8100FF1906 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4E23BEDA17A01B8100FF1906 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E23BEE217A01CF800FF1906 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = viewcontroller/LoginViewController.h; sourceTree = "<group>"; };
+		4E23BEE317A01CF800FF1906 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = viewcontroller/LoginViewController.m; sourceTree = "<group>"; };
+		4E23BEE517A01D9900FF1906 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4E23BEEB17A0278600FF1906 /* UISimpleTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleTextField.h; path = component/UISimpleTextField.h; sourceTree = "<group>"; };
+		4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleTextField.m; path = component/UISimpleTextField.m; sourceTree = "<group>"; };
+		4E23BEEE17A02E7D00FF1906 /* UISimpleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleButton.h; path = component/UISimpleButton.h; sourceTree = "<group>"; };
+		4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleButton.m; path = component/UISimpleButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E23BEE617A01D9900FF1906 /* QuartzCore.framework in Frameworks */,
 				4E23BEBC17A01B8100FF1906 /* UIKit.framework in Frameworks */,
 				4E23BEBE17A01B8100FF1906 /* Foundation.framework in Frameworks */,
 				4E23BEC017A01B8100FF1906 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +70,7 @@
 		4E23BEAF17A01B8000FF1906 = {
 			isa = PBXGroup;
 			children = (
+				4E23BEE517A01D9900FF1906 /* QuartzCore.framework */,
 				4E23BEC117A01B8100FF1906 /* sleep */,
 				4E23BEBA17A01B8100FF1906 /* Frameworks */,
 				4E23BEB917A01B8100FF1906 /* Products */,
@@ -85,12 +98,12 @@
 		4E23BEC117A01B8100FF1906 /* sleep */ = {
 			isa = PBXGroup;
 			children = (
+				4E23BEEA17A0275700FF1906 /* component */,
+				4E23BEE117A01CD800FF1906 /* viewcontroller */,
 				4E23BECA17A01B8100FF1906 /* AppDelegate.h */,
 				4E23BECB17A01B8100FF1906 /* AppDelegate.m */,
 				4E23BED317A01B8100FF1906 /* MainStoryboard_iPhone.storyboard */,
 				4E23BED617A01B8100FF1906 /* MainStoryboard_iPad.storyboard */,
-				4E23BED917A01B8100FF1906 /* ViewController.h */,
-				4E23BEDA17A01B8100FF1906 /* ViewController.m */,
 				4E23BEC217A01B8100FF1906 /* Supporting Files */,
 			);
 			path = sleep;
@@ -108,6 +121,28 @@
 				4E23BED117A01B8100FF1906 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E23BEE117A01CD800FF1906 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BED917A01B8100FF1906 /* ViewController.h */,
+				4E23BEDA17A01B8100FF1906 /* ViewController.m */,
+				4E23BEE217A01CF800FF1906 /* LoginViewController.h */,
+				4E23BEE317A01CF800FF1906 /* LoginViewController.m */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+		4E23BEEA17A0275700FF1906 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEEB17A0278600FF1906 /* UISimpleTextField.h */,
+				4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */,
+				4E23BEEE17A02E7D00FF1906 /* UISimpleButton.h */,
+				4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */,
+			);
+			name = component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +215,9 @@
 				4E23BEC817A01B8100FF1906 /* main.m in Sources */,
 				4E23BECC17A01B8100FF1906 /* AppDelegate.m in Sources */,
 				4E23BEDB17A01B8100FF1906 /* ViewController.m in Sources */,
+				4E23BEE417A01CF800FF1906 /* LoginViewController.m in Sources */,
+				4E23BEED17A0278600FF1906 /* UISimpleTextField.m in Sources */,
+				4E23BEF017A02E7D00FF1906 /* UISimpleButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +315,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sleep/sleep-Prefix.pch";
 				INFOPLIST_FILE = "sleep/sleep-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -288,7 +328,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "sleep/sleep-Prefix.pch";
 				INFOPLIST_FILE = "sleep/sleep-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
