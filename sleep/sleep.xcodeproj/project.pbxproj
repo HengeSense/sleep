@@ -31,6 +31,9 @@
 		4E23BF0317A0689F00FF1906 /* SkyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0217A0689F00FF1906 /* SkyViewController.m */; };
 		4E23BF0617A06B6D00FF1906 /* StopBangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */; };
 		4E23BF0A17A0709100FF1906 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0817A0701A00FF1906 /* iCarousel.m */; };
+		4E23BF0F17A0AB5300FF1906 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0C17A0AB4C00FF1906 /* DRNRealTimeBlurView.m */; };
+		4E23BF1017A0AB5300FF1906 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0E17A0AB4C00FF1906 /* UIImage+BoxBlur.m */; };
+		4E23BF1217A0AC3300FF1906 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BF1117A0AC3300FF1906 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,11 @@
 		4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopBangViewController.m; path = viewcontroller/StopBangViewController.m; sourceTree = "<group>"; };
 		4E23BF0717A0701A00FF1906 /* iCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		4E23BF0817A0701A00FF1906 /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		4E23BF0B17A0AB4C00FF1906 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		4E23BF0C17A0AB4C00FF1906 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		4E23BF0D17A0AB4C00FF1906 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		4E23BF0E17A0AB4C00FF1906 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		4E23BF1117A0AC3300FF1906 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E23BF1217A0AC3300FF1906 /* Accelerate.framework in Frameworks */,
 				4E23BEE617A01D9900FF1906 /* QuartzCore.framework in Frameworks */,
 				4E23BEBC17A01B8100FF1906 /* UIKit.framework in Frameworks */,
 				4E23BEBE17A01B8100FF1906 /* Foundation.framework in Frameworks */,
@@ -94,6 +103,7 @@
 		4E23BEAF17A01B8000FF1906 = {
 			isa = PBXGroup;
 			children = (
+				4E23BF1117A0AC3300FF1906 /* Accelerate.framework */,
 				4E23BEE517A01D9900FF1906 /* QuartzCore.framework */,
 				4E23BEC117A01B8100FF1906 /* sleep */,
 				4E23BEBA17A01B8100FF1906 /* Frameworks */,
@@ -195,6 +205,10 @@
 		4E23BF0917A0701E00FF1906 /* ext */ = {
 			isa = PBXGroup;
 			children = (
+				4E23BF0B17A0AB4C00FF1906 /* DRNRealTimeBlurView.h */,
+				4E23BF0C17A0AB4C00FF1906 /* DRNRealTimeBlurView.m */,
+				4E23BF0D17A0AB4C00FF1906 /* UIImage+BoxBlur.h */,
+				4E23BF0E17A0AB4C00FF1906 /* UIImage+BoxBlur.m */,
 				4E23BF0717A0701A00FF1906 /* iCarousel.h */,
 				4E23BF0817A0701A00FF1906 /* iCarousel.m */,
 			);
@@ -268,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E23BF0F17A0AB5300FF1906 /* DRNRealTimeBlurView.m in Sources */,
+				4E23BF1017A0AB5300FF1906 /* UIImage+BoxBlur.m in Sources */,
 				4E23BF0A17A0709100FF1906 /* iCarousel.m in Sources */,
 				4E23BEC817A01B8100FF1906 /* main.m in Sources */,
 				4E23BECC17A01B8100FF1906 /* AppDelegate.m in Sources */,

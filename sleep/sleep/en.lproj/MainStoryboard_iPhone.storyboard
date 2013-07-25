@@ -150,7 +150,18 @@
                     <view key="view" contentMode="scaleToFill" id="lSr-2Q-VRx">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cor-sQ-v9s">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cor-sQ-v9s" firstAttribute="bottom" secondItem="lSr-2Q-VRx" secondAttribute="bottom" type="default" id="LhN-2L-xpX"/>
+                            <constraint firstItem="cor-sQ-v9s" firstAttribute="trailing" secondItem="lSr-2Q-VRx" secondAttribute="trailing" type="default" id="aQx-4T-8Qt"/>
+                            <constraint firstItem="cor-sQ-v9s" firstAttribute="leading" secondItem="lSr-2Q-VRx" secondAttribute="leading" type="default" id="jDT-rR-A9N"/>
+                            <constraint firstItem="cor-sQ-v9s" firstAttribute="top" secondItem="lSr-2Q-VRx" secondAttribute="top" type="default" id="vjh-gX-uDZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sleep Survey" id="Dxs-v4-iPH">
                         <barButtonItem key="backBarButtonItem" title="Back" id="xqW-9S-ZWk"/>
@@ -167,7 +178,61 @@
                     <view key="view" contentMode="scaleToFill" id="UeS-z3-f0U">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZYa-y5-XGU">
+                                <color key="minimumTrackTintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3G-FX-kb9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="HAY-2D-77G"/>
+                                    <constraint firstAttribute="height" constant="21" id="x32-CN-E7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="180" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoI-1v-v1y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="K7E-cx-bm9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="80"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RQS-JU-Jl6">
+                                <segments>
+                                    <segment title="Heart"/>
+                                    <segment title="EEG"/>
+                                    <segment title="Activity"/>
+                                    <segment title="Temp"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HEART RATE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyc-bl-qS7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="iWx-lm-C3k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w3G-FX-kb9" firstAttribute="top" secondItem="ZYa-y5-XGU" secondAttribute="top" type="default" id="4ev-OY-Eh4"/>
+                            <constraint firstItem="pyc-bl-qS7" firstAttribute="top" secondItem="UeS-z3-f0U" secondAttribute="top" constant="63" id="8gA-My-eGx"/>
+                            <constraint firstItem="ZYa-y5-XGU" firstAttribute="centerX" secondItem="RQS-JU-Jl6" secondAttribute="centerX" type="default" id="PlU-Lc-P6N"/>
+                            <constraint firstAttribute="trailing" secondItem="RQS-JU-Jl6" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="QSy-NU-UmD"/>
+                            <constraint firstAttribute="trailing" secondItem="w3G-FX-kb9" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Rxy-Br-b83"/>
+                            <constraint firstAttribute="bottom" secondItem="ZYa-y5-XGU" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="VwD-AZ-SZp"/>
+                            <constraint firstItem="RoI-1v-v1y" firstAttribute="top" secondItem="pyc-bl-qS7" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="beA-WQ-lbm"/>
+                            <constraint firstItem="RoI-1v-v1y" firstAttribute="leading" secondItem="UeS-z3-f0U" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bod-ev-hiV"/>
+                            <constraint firstItem="RQS-JU-Jl6" firstAttribute="top" secondItem="UeS-z3-f0U" secondAttribute="top" constant="20" symbolic="YES" type="default" id="c9d-qB-mys"/>
+                            <constraint firstItem="w3G-FX-kb9" firstAttribute="leading" secondItem="ZYa-y5-XGU" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eka-MN-Rlc"/>
+                            <constraint firstItem="RQS-JU-Jl6" firstAttribute="leading" secondItem="UeS-z3-f0U" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fqm-Sg-kF0"/>
+                            <constraint firstItem="RoI-1v-v1y" firstAttribute="trailing" secondItem="pyc-bl-qS7" secondAttribute="trailing" type="default" id="l6l-lo-9x0"/>
+                            <constraint firstItem="pyc-bl-qS7" firstAttribute="leading" secondItem="UeS-z3-f0U" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="yr2-tP-KUd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="nIk-gn-FNv">
                         <barButtonItem key="backBarButtonItem" title="Yo" id="tbz-hv-vdf"/>
@@ -200,8 +265,14 @@
         <class className="BasicInfoViewController" superclassName="SkyViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BasicInfoViewController.h"/>
         </class>
-        <class className="HomeViewController" superclassName="UIViewController">
+        <class className="DRNRealTimeBlurView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DRNRealTimeBlurView.h"/>
+        </class>
+        <class className="HomeViewController" superclassName="SkyViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="blurredView" candidateClass="DRNRealTimeBlurView"/>
+            </relationships>
         </class>
         <class className="LoginViewController" superclassName="SkyViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>

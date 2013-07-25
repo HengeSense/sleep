@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SkyViewController.h"
+#import "DRNRealTimeBlurView.h"
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : SkyViewController
+@property (strong, nonatomic) IBOutlet DRNRealTimeBlurView *blurredView;
 
 @end
