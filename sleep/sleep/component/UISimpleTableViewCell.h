@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  UISimpleTableViewCell.h
 //  sleep
 //
 //  Created by Marc Fiume on 2013-07-24.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SkyViewController.h"
 
-@interface LoginViewController : SkyViewController
+@interface UISimpleTableViewCell : UITableViewCell
 
 @end

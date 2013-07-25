@@ -53,21 +53,26 @@
     float yStart = self.bounds.size.height;
     float yEnd = yStart;
     
+    float bumper = 0;
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetLineWidth(context, 2.0);
     
     CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     
-    CGContextMoveToPoint(context, xStart, yStart);
+    CGContextMoveToPoint(context, xStart, yStart-bumper);
+    CGContextAddLineToPoint(context, xStart, yStart);
     CGContextAddLineToPoint(context, xEnd, yEnd);
+    CGContextAddLineToPoint(context, xEnd, yEnd-bumper);
     
     CGContextStrokePath(context);
     
 }
 
 - (void) drawPlaceholderInRect:(CGRect)rect {
-    [[UIColor whiteColor] setFill];
+    [[[UIColor alloc] initWithRed:1.0 green:1.0 blue:1.0 alpha:0.5] setFill];
+    //[[UIColor whiteColor] setFill];
     [[self placeholder] drawInRect:rect withFont:[self font]];
 }
 

@@ -1,47 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4Ht-PC-cXv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="5">
-            <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFC-rT-9de">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="AaI-gd-38F" kind="modal" id="UCN-jh-IqO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="kFC-rT-9de" secondAttribute="bottom" constant="68" id="2KJ-dc-WJJ"/>
-                            <constraint firstItem="kFC-rT-9de" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="hFV-9r-eL6"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="9IG-Eg-u3N">
             <objects>
                 <viewController storyboardIdentifier="" id="AaI-gd-38F" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FJ7-D6-kfC">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ppJ-Yv-YyL" customClass="UISimpleTextField">
@@ -61,6 +29,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pvn-rh-7ks" kind="push" id="dBH-Sl-GTk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRi-fv-Fvh" customClass="UISimpleButton">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -71,6 +42,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Hdo-e7-miQ" kind="push" id="BhP-jK-JmW"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsC-xR-n5i">
                                 <constraints>
@@ -98,24 +72,154 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGS-Kz-txt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="-29"/>
+            <point key="canvasLocation" x="1207" y="-87"/>
+        </scene>
+        <!--Basic Info View Controller - Create Account-->
+        <scene sceneID="GJ4-ND-b1k">
+            <objects>
+                <viewController id="Hdo-e7-miQ" customClass="BasicInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2cA-2r-QhC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="first name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Va-sfD" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmz-HF-iXa" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hhb-Pp-MSE" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oR-9C-whO" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Wd-LV-p3f" customClass="UISimpleTextField">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePl-lW-wSX" customClass="UISimpleButton">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="continue">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xRX-GF-svd" kind="push" id="0rM-X2-9qW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8oR-9C-whO" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0BR-qG-xp6"/>
+                            <constraint firstItem="8oR-9C-whO" firstAttribute="top" secondItem="Hhb-Pp-MSE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1tZ-S0-KEm"/>
+                            <constraint firstAttribute="trailing" secondItem="6Wd-LV-p3f" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2F5-BK-oGi"/>
+                            <constraint firstItem="Hhb-Pp-MSE" firstAttribute="top" secondItem="lmz-HF-iXa" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FZh-JW-JhD"/>
+                            <constraint firstAttribute="trailing" secondItem="eJF-Va-sfD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IeV-07-bg5"/>
+                            <constraint firstItem="ePl-lW-wSX" firstAttribute="top" secondItem="6Wd-LV-p3f" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jsb-uT-19p"/>
+                            <constraint firstItem="Hhb-Pp-MSE" firstAttribute="leading" secondItem="2cA-2r-QhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ra2-g3-i62"/>
+                            <constraint firstItem="lmz-HF-iXa" firstAttribute="leading" secondItem="2cA-2r-QhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="TgS-On-pt5"/>
+                            <constraint firstItem="lmz-HF-iXa" firstAttribute="top" secondItem="eJF-Va-sfD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UrN-61-gg6"/>
+                            <constraint firstItem="6Wd-LV-p3f" firstAttribute="leading" secondItem="2cA-2r-QhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="WUg-oA-BaN"/>
+                            <constraint firstItem="eJF-Va-sfD" firstAttribute="leading" secondItem="2cA-2r-QhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XSM-s0-YUS"/>
+                            <constraint firstAttribute="trailing" secondItem="lmz-HF-iXa" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Yj7-04-CHX"/>
+                            <constraint firstItem="8oR-9C-whO" firstAttribute="leading" secondItem="2cA-2r-QhC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="adR-ix-BxA"/>
+                            <constraint firstItem="eJF-Va-sfD" firstAttribute="top" secondItem="2cA-2r-QhC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="byS-IB-6Rs"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhb-Pp-MSE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="jEJ-yJ-p3I"/>
+                            <constraint firstItem="6Wd-LV-p3f" firstAttribute="top" secondItem="8oR-9C-whO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rbk-6j-Jzt"/>
+                            <constraint firstAttribute="trailing" secondItem="ePl-lW-wSX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="uT2-TI-Gqf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Account" id="6s6-Yp-Ggv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRb-lV-jsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1871" y="319"/>
+        </scene>
+        <!--Stop Bang View Controller - Sleep Survey-->
+        <scene sceneID="MGo-UF-Yqz">
+            <objects>
+                <viewController id="xRX-GF-svd" customClass="StopBangViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSr-2Q-VRx">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sleep Survey" id="Dxs-v4-iPH">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="xqW-9S-ZWk"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cn4-fm-LtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288" y="318"/>
+        </scene>
+        <!--Home View Controller - Home-->
+        <scene sceneID="VHA-NY-JBV">
+            <objects>
+                <viewController id="pvn-rh-7ks" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UeS-z3-f0U">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="nIk-gn-FNv">
+                        <barButtonItem key="backBarButtonItem" title="Yo" id="tbz-hv-vdf"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ju-CY-3s2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WU4-eN-EEF">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="4Ht-PC-cXv" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7kH-MQ-YOD">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AaI-gd-38F" kind="relationship" relationship="rootViewController" id="eXS-ez-xH7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rWX-a5-5lt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="-87"/>
         </scene>
     </scenes>
     <classes>
-        <class className="LoginViewController" superclassName="UIViewController">
+        <class className="BasicInfoViewController" superclassName="SkyViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BasicInfoViewController.h"/>
+        </class>
+        <class className="HomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomeViewController.h"/>
+        </class>
+        <class className="LoginViewController" superclassName="SkyViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SkyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SkyViewController.h"/>
+        </class>
+        <class className="StopBangViewController" superclassName="SkyViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/StopBangViewController.h"/>
         </class>
         <class className="UISimpleButton" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UISimpleButton.h"/>
         </class>
         <class className="UISimpleTextField" superclassName="UITextField">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UISimpleTextField.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

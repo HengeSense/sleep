@@ -23,6 +23,14 @@
 		4E23BEE617A01D9900FF1906 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BEE517A01D9900FF1906 /* QuartzCore.framework */; };
 		4E23BEED17A0278600FF1906 /* UISimpleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */; };
 		4E23BEF017A02E7D00FF1906 /* UISimpleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */; };
+		4E23BEF317A036DC00FF1906 /* CreateAccountBasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEF217A036DC00FF1906 /* CreateAccountBasicInfoViewController.m */; };
+		4E23BEF617A0380500FF1906 /* UISimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEF517A0380500FF1906 /* UISimpleTableViewCell.m */; };
+		4E23BEFA17A03AEE00FF1906 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEF917A03AEE00FF1906 /* ViewUtil.m */; };
+		4E23BEFD17A03BC600FF1906 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEFC17A03BC600FF1906 /* HomeViewController.m */; };
+		4E23BF0017A0688C00FF1906 /* BasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEFF17A0688C00FF1906 /* BasicInfoViewController.m */; };
+		4E23BF0317A0689F00FF1906 /* SkyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0217A0689F00FF1906 /* SkyViewController.m */; };
+		4E23BF0617A06B6D00FF1906 /* StopBangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */; };
+		4E23BF0A17A0709100FF1906 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0817A0701A00FF1906 /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,22 @@
 		4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleTextField.m; path = component/UISimpleTextField.m; sourceTree = "<group>"; };
 		4E23BEEE17A02E7D00FF1906 /* UISimpleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleButton.h; path = component/UISimpleButton.h; sourceTree = "<group>"; };
 		4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleButton.m; path = component/UISimpleButton.m; sourceTree = "<group>"; };
+		4E23BEF117A036DC00FF1906 /* CreateAccountBasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateAccountBasicInfoViewController.h; path = viewcontroller/CreateAccountBasicInfoViewController.h; sourceTree = "<group>"; };
+		4E23BEF217A036DC00FF1906 /* CreateAccountBasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateAccountBasicInfoViewController.m; path = viewcontroller/CreateAccountBasicInfoViewController.m; sourceTree = "<group>"; };
+		4E23BEF417A0380500FF1906 /* UISimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleTableViewCell.h; path = component/UISimpleTableViewCell.h; sourceTree = "<group>"; };
+		4E23BEF517A0380500FF1906 /* UISimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleTableViewCell.m; path = component/UISimpleTableViewCell.m; sourceTree = "<group>"; };
+		4E23BEF817A03AEE00FF1906 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewUtil.h; path = util/ViewUtil.h; sourceTree = "<group>"; };
+		4E23BEF917A03AEE00FF1906 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewUtil.m; path = util/ViewUtil.m; sourceTree = "<group>"; };
+		4E23BEFB17A03BC500FF1906 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = viewcontroller/HomeViewController.h; sourceTree = "<group>"; };
+		4E23BEFC17A03BC600FF1906 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = viewcontroller/HomeViewController.m; sourceTree = "<group>"; };
+		4E23BEFE17A0688C00FF1906 /* BasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicInfoViewController.h; path = viewcontroller/BasicInfoViewController.h; sourceTree = "<group>"; };
+		4E23BEFF17A0688C00FF1906 /* BasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicInfoViewController.m; path = viewcontroller/BasicInfoViewController.m; sourceTree = "<group>"; };
+		4E23BF0117A0689F00FF1906 /* SkyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkyViewController.h; path = viewcontroller/SkyViewController.h; sourceTree = "<group>"; };
+		4E23BF0217A0689F00FF1906 /* SkyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkyViewController.m; path = viewcontroller/SkyViewController.m; sourceTree = "<group>"; };
+		4E23BF0417A06B6C00FF1906 /* StopBangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StopBangViewController.h; path = viewcontroller/StopBangViewController.h; sourceTree = "<group>"; };
+		4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopBangViewController.m; path = viewcontroller/StopBangViewController.m; sourceTree = "<group>"; };
+		4E23BF0717A0701A00FF1906 /* iCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		4E23BF0817A0701A00FF1906 /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +122,8 @@
 		4E23BEC117A01B8100FF1906 /* sleep */ = {
 			isa = PBXGroup;
 			children = (
+				4E23BF0917A0701E00FF1906 /* ext */,
+				4E23BEF717A03AD500FF1906 /* util */,
 				4E23BEEA17A0275700FF1906 /* component */,
 				4E23BEE117A01CD800FF1906 /* viewcontroller */,
 				4E23BECA17A01B8100FF1906 /* AppDelegate.h */,
@@ -130,6 +156,16 @@
 				4E23BEDA17A01B8100FF1906 /* ViewController.m */,
 				4E23BEE217A01CF800FF1906 /* LoginViewController.h */,
 				4E23BEE317A01CF800FF1906 /* LoginViewController.m */,
+				4E23BEF117A036DC00FF1906 /* CreateAccountBasicInfoViewController.h */,
+				4E23BEF217A036DC00FF1906 /* CreateAccountBasicInfoViewController.m */,
+				4E23BEFB17A03BC500FF1906 /* HomeViewController.h */,
+				4E23BEFC17A03BC600FF1906 /* HomeViewController.m */,
+				4E23BEFE17A0688C00FF1906 /* BasicInfoViewController.h */,
+				4E23BEFF17A0688C00FF1906 /* BasicInfoViewController.m */,
+				4E23BF0117A0689F00FF1906 /* SkyViewController.h */,
+				4E23BF0217A0689F00FF1906 /* SkyViewController.m */,
+				4E23BF0417A06B6C00FF1906 /* StopBangViewController.h */,
+				4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */,
 			);
 			name = viewcontroller;
 			sourceTree = "<group>";
@@ -141,8 +177,28 @@
 				4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */,
 				4E23BEEE17A02E7D00FF1906 /* UISimpleButton.h */,
 				4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */,
+				4E23BEF417A0380500FF1906 /* UISimpleTableViewCell.h */,
+				4E23BEF517A0380500FF1906 /* UISimpleTableViewCell.m */,
 			);
 			name = component;
+			sourceTree = "<group>";
+		};
+		4E23BEF717A03AD500FF1906 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEF817A03AEE00FF1906 /* ViewUtil.h */,
+				4E23BEF917A03AEE00FF1906 /* ViewUtil.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		4E23BF0917A0701E00FF1906 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BF0717A0701A00FF1906 /* iCarousel.h */,
+				4E23BF0817A0701A00FF1906 /* iCarousel.m */,
+			);
+			name = ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,12 +268,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E23BF0A17A0709100FF1906 /* iCarousel.m in Sources */,
 				4E23BEC817A01B8100FF1906 /* main.m in Sources */,
 				4E23BECC17A01B8100FF1906 /* AppDelegate.m in Sources */,
 				4E23BEDB17A01B8100FF1906 /* ViewController.m in Sources */,
 				4E23BEE417A01CF800FF1906 /* LoginViewController.m in Sources */,
 				4E23BEED17A0278600FF1906 /* UISimpleTextField.m in Sources */,
 				4E23BEF017A02E7D00FF1906 /* UISimpleButton.m in Sources */,
+				4E23BEF317A036DC00FF1906 /* CreateAccountBasicInfoViewController.m in Sources */,
+				4E23BEF617A0380500FF1906 /* UISimpleTableViewCell.m in Sources */,
+				4E23BEFA17A03AEE00FF1906 /* ViewUtil.m in Sources */,
+				4E23BEFD17A03BC600FF1906 /* HomeViewController.m in Sources */,
+				4E23BF0017A0688C00FF1906 /* BasicInfoViewController.m in Sources */,
+				4E23BF0317A0689F00FF1906 /* SkyViewController.m in Sources */,
+				4E23BF0617A06B6D00FF1906 /* StopBangViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

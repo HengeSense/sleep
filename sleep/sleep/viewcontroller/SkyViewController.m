@@ -1,50 +1,45 @@
 //
-//  LoginViewController.m
+//  SkyViewController.m
 //  sleep
 //
 //  Created by Marc Fiume on 2013-07-24.
 //  Copyright (c) 2013 Marc Fiume. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import <QuartzCore/QuartzCore.h>
+#import "SkyViewController.h"
 #import "ViewUtil.h"
 
-@interface LoginViewController ()
+@interface SkyViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation SkyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization        
+        // Custom initialization
     }
     return self;
 }
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    backgroundView = [ViewUtil addBackgroundToView:self.view];
     [[self navigationController] setNavigationBarHidden:YES animated:NO];
-}
-
--(void) viewDidDisappear:(BOOL)animated {
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];
-}
-
--(void) viewDidAppear:(BOOL)animated {
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(UIView*) getBackgroundView {
+    return backgroundView;
 }
 
 @end

@@ -1,44 +1,34 @@
 //
-//  LoginViewController.m
+//  HomeViewController.m
 //  sleep
 //
 //  Created by Marc Fiume on 2013-07-24.
 //  Copyright (c) 2013 Marc Fiume. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import <QuartzCore/QuartzCore.h>
+#import "HomeViewController.h"
 #import "ViewUtil.h"
 
-@interface LoginViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation HomeViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization        
+        // Custom initialization
     }
     return self;
 }
-
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [[self navigationController] setNavigationBarHidden:YES animated:NO];
-}
-
--(void) viewDidDisappear:(BOOL)animated {
-    [[self navigationController] setNavigationBarHidden:NO animated:YES];
-}
-
--(void) viewDidAppear:(BOOL)animated {
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    [ViewUtil addBackgroundToView:self.view];
 }
 
 - (void)didReceiveMemoryWarning

@@ -28,7 +28,7 @@
         //[self setBorderStyle:UITextBorderStyleNone];
         [self.titleLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Light" size:18]];
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        
+        [self setTitleColor:[[UIColor alloc] initWithWhite:1.0 alpha:0.6] forState:UIControlStateHighlighted];
     }
     
     return self;

@@ -13,6 +13,29 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    
+    UIColor* textTint = [UIColor colorWithRed:80.0/255.0 green:80.0/255.0 blue:80.0/255.0 alpha:1.0];
+    UIColor* lightTint = [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:240.0/255.0 alpha:1.0];
+    
+    [[UIBarButtonItem appearance] setTintColor:lightTint];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: textTint,  UITextAttributeTextColor,[NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                                          UITextAttributeTextShadowOffset,nil] forState:UIControlStateNormal];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                                          UITextAttributeTextShadowOffset,nil] forState:UIControlStateHighlighted];
+    
+    [[UINavigationBar appearance] setTintColor:lightTint];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      textTint,
+      UITextAttributeTextColor,
+      [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+      UITextAttributeTextShadowOffset,
+      [UIFont fontWithName:@"HelveticaNeue-Light" size:18.0],
+      UITextAttributeFont,
+      nil]];
+    
     return YES;
 }
 							
