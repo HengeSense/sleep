@@ -107,7 +107,7 @@ int buttonHeight = 40;
 }
 
 -(void) setIndex:(int)i {
-    
+
     if (i == [questions count]) {
         [self finishSurvey];
         return;
