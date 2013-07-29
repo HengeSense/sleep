@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E23BEBC17A01B8100FF1906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BEBB17A01B8100FF1906 /* UIKit.framework */; };
+		4E23BEBE17A01B8100FF1906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BEBD17A01B8100FF1906 /* Foundation.framework */; };
+		4E23BEC017A01B8100FF1906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BEBF17A01B8100FF1906 /* CoreGraphics.framework */; };
+		4E23BEC617A01B8100FF1906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BEC417A01B8100FF1906 /* InfoPlist.strings */; };
+		4E23BEC817A01B8100FF1906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEC717A01B8100FF1906 /* main.m */; };
+		4E23BECC17A01B8100FF1906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BECB17A01B8100FF1906 /* AppDelegate.m */; };
+		4E23BECE17A01B8100FF1906 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BECD17A01B8100FF1906 /* Default.png */; };
+		4E23BED017A01B8100FF1906 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BECF17A01B8100FF1906 /* Default@2x.png */; };
+		4E23BED217A01B8100FF1906 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BED117A01B8100FF1906 /* Default-568h@2x.png */; };
+		4E23BED517A01B8100FF1906 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BED317A01B8100FF1906 /* MainStoryboard_iPhone.storyboard */; };
+		4E23BED817A01B8100FF1906 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E23BED617A01B8100FF1906 /* MainStoryboard_iPad.storyboard */; };
+		4E23BEDB17A01B8100FF1906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEDA17A01B8100FF1906 /* ViewController.m */; };
+		4E23BEE417A01CF800FF1906 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEE317A01CF800FF1906 /* LoginViewController.m */; };
+		4E23BEE617A01D9900FF1906 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BEE517A01D9900FF1906 /* QuartzCore.framework */; };
+		4E23BEED17A0278600FF1906 /* UISimpleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */; };
+		4E23BEF017A02E7D00FF1906 /* UISimpleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */; };
+		4E23BEF317A036DC00FF1906 /* CreateAccountBasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEF217A036DC00FF1906 /* CreateAccountBasicInfoViewController.m */; };
+		4E23BEF617A0380500FF1906 /* UISimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEF517A0380500FF1906 /* UISimpleTableViewCell.m */; };
+		4E23BEFA17A03AEE00FF1906 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEF917A03AEE00FF1906 /* ViewUtil.m */; };
+		4E23BEFD17A03BC600FF1906 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEFC17A03BC600FF1906 /* HomeViewController.m */; };
+		4E23BF0017A0688C00FF1906 /* BasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BEFF17A0688C00FF1906 /* BasicInfoViewController.m */; };
+		4E23BF0317A0689F00FF1906 /* SkyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0217A0689F00FF1906 /* SkyViewController.m */; };
+		4E23BF0617A06B6D00FF1906 /* StopBangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */; };
+		4E23BF0A17A0709100FF1906 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0817A0701A00FF1906 /* iCarousel.m */; };
+		4E23BF0F17A0AB5300FF1906 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0C17A0AB4C00FF1906 /* DRNRealTimeBlurView.m */; };
+		4E23BF1017A0AB5300FF1906 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E23BF0E17A0AB4C00FF1906 /* UIImage+BoxBlur.m */; };
+		4E23BF1217A0AC3300FF1906 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23BF1117A0AC3300FF1906 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E23BEB817A01B8100FF1906 /* sleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E23BEBB17A01B8100FF1906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4E23BEBD17A01B8100FF1906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E23BEBF17A01B8100FF1906 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4E23BEC317A01B8100FF1906 /* sleep-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "sleep-Info.plist"; sourceTree = "<group>"; };
+		4E23BEC517A01B8100FF1906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E23BEC717A01B8100FF1906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E23BEC917A01B8100FF1906 /* sleep-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sleep-Prefix.pch"; sourceTree = "<group>"; };
+		4E23BECA17A01B8100FF1906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E23BECB17A01B8100FF1906 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E23BECD17A01B8100FF1906 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4E23BECF17A01B8100FF1906 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4E23BED117A01B8100FF1906 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4E23BED417A01B8100FF1906 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4E23BED717A01B8100FF1906 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4E23BED917A01B8100FF1906 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4E23BEDA17A01B8100FF1906 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E23BEE217A01CF800FF1906 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = viewcontroller/LoginViewController.h; sourceTree = "<group>"; };
+		4E23BEE317A01CF800FF1906 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = viewcontroller/LoginViewController.m; sourceTree = "<group>"; };
+		4E23BEE517A01D9900FF1906 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4E23BEEB17A0278600FF1906 /* UISimpleTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleTextField.h; path = component/UISimpleTextField.h; sourceTree = "<group>"; };
+		4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleTextField.m; path = component/UISimpleTextField.m; sourceTree = "<group>"; };
+		4E23BEEE17A02E7D00FF1906 /* UISimpleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleButton.h; path = component/UISimpleButton.h; sourceTree = "<group>"; };
+		4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleButton.m; path = component/UISimpleButton.m; sourceTree = "<group>"; };
+		4E23BEF117A036DC00FF1906 /* CreateAccountBasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateAccountBasicInfoViewController.h; path = viewcontroller/CreateAccountBasicInfoViewController.h; sourceTree = "<group>"; };
+		4E23BEF217A036DC00FF1906 /* CreateAccountBasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateAccountBasicInfoViewController.m; path = viewcontroller/CreateAccountBasicInfoViewController.m; sourceTree = "<group>"; };
+		4E23BEF417A0380500FF1906 /* UISimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UISimpleTableViewCell.h; path = component/UISimpleTableViewCell.h; sourceTree = "<group>"; };
+		4E23BEF517A0380500FF1906 /* UISimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UISimpleTableViewCell.m; path = component/UISimpleTableViewCell.m; sourceTree = "<group>"; };
+		4E23BEF817A03AEE00FF1906 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewUtil.h; path = util/ViewUtil.h; sourceTree = "<group>"; };
+		4E23BEF917A03AEE00FF1906 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewUtil.m; path = util/ViewUtil.m; sourceTree = "<group>"; };
+		4E23BEFB17A03BC500FF1906 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = viewcontroller/HomeViewController.h; sourceTree = "<group>"; };
+		4E23BEFC17A03BC600FF1906 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = viewcontroller/HomeViewController.m; sourceTree = "<group>"; };
+		4E23BEFE17A0688C00FF1906 /* BasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicInfoViewController.h; path = viewcontroller/BasicInfoViewController.h; sourceTree = "<group>"; };
+		4E23BEFF17A0688C00FF1906 /* BasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicInfoViewController.m; path = viewcontroller/BasicInfoViewController.m; sourceTree = "<group>"; };
+		4E23BF0117A0689F00FF1906 /* SkyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkyViewController.h; path = viewcontroller/SkyViewController.h; sourceTree = "<group>"; };
+		4E23BF0217A0689F00FF1906 /* SkyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SkyViewController.m; path = viewcontroller/SkyViewController.m; sourceTree = "<group>"; };
+		4E23BF0417A06B6C00FF1906 /* StopBangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StopBangViewController.h; path = viewcontroller/StopBangViewController.h; sourceTree = "<group>"; };
+		4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StopBangViewController.m; path = viewcontroller/StopBangViewController.m; sourceTree = "<group>"; };
+		4E23BF0717A0701A00FF1906 /* iCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		4E23BF0817A0701A00FF1906 /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		4E23BF0B17A0AB4C00FF1906 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		4E23BF0C17A0AB4C00FF1906 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		4E23BF0D17A0AB4C00FF1906 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		4E23BF0E17A0AB4C00FF1906 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		4E23BF1117A0AC3300FF1906 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E23BEB517A01B8100FF1906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E23BF1217A0AC3300FF1906 /* Accelerate.framework in Frameworks */,
+				4E23BEE617A01D9900FF1906 /* QuartzCore.framework in Frameworks */,
+				4E23BEBC17A01B8100FF1906 /* UIKit.framework in Frameworks */,
+				4E23BEBE17A01B8100FF1906 /* Foundation.framework in Frameworks */,
+				4E23BEC017A01B8100FF1906 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E23BEAF17A01B8000FF1906 = {
+			isa = PBXGroup;
+			children = (
+				4E23BF1117A0AC3300FF1906 /* Accelerate.framework */,
+				4E23BEE517A01D9900FF1906 /* QuartzCore.framework */,
+				4E23BEC117A01B8100FF1906 /* sleep */,
+				4E23BEBA17A01B8100FF1906 /* Frameworks */,
+				4E23BEB917A01B8100FF1906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E23BEB917A01B8100FF1906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEB817A01B8100FF1906 /* sleep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E23BEBA17A01B8100FF1906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEBB17A01B8100FF1906 /* UIKit.framework */,
+				4E23BEBD17A01B8100FF1906 /* Foundation.framework */,
+				4E23BEBF17A01B8100FF1906 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E23BEC117A01B8100FF1906 /* sleep */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BF0917A0701E00FF1906 /* ext */,
+				4E23BEF717A03AD500FF1906 /* util */,
+				4E23BEEA17A0275700FF1906 /* component */,
+				4E23BEE117A01CD800FF1906 /* viewcontroller */,
+				4E23BECA17A01B8100FF1906 /* AppDelegate.h */,
+				4E23BECB17A01B8100FF1906 /* AppDelegate.m */,
+				4E23BED317A01B8100FF1906 /* MainStoryboard_iPhone.storyboard */,
+				4E23BED617A01B8100FF1906 /* MainStoryboard_iPad.storyboard */,
+				4E23BEC217A01B8100FF1906 /* Supporting Files */,
+			);
+			path = sleep;
+			sourceTree = "<group>";
+		};
+		4E23BEC217A01B8100FF1906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEC317A01B8100FF1906 /* sleep-Info.plist */,
+				4E23BEC417A01B8100FF1906 /* InfoPlist.strings */,
+				4E23BEC717A01B8100FF1906 /* main.m */,
+				4E23BEC917A01B8100FF1906 /* sleep-Prefix.pch */,
+				4E23BECD17A01B8100FF1906 /* Default.png */,
+				4E23BECF17A01B8100FF1906 /* Default@2x.png */,
+				4E23BED117A01B8100FF1906 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E23BEE117A01CD800FF1906 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BED917A01B8100FF1906 /* ViewController.h */,
+				4E23BEDA17A01B8100FF1906 /* ViewController.m */,
+				4E23BEE217A01CF800FF1906 /* LoginViewController.h */,
+				4E23BEE317A01CF800FF1906 /* LoginViewController.m */,
+				4E23BEF117A036DC00FF1906 /* CreateAccountBasicInfoViewController.h */,
+				4E23BEF217A036DC00FF1906 /* CreateAccountBasicInfoViewController.m */,
+				4E23BEFB17A03BC500FF1906 /* HomeViewController.h */,
+				4E23BEFC17A03BC600FF1906 /* HomeViewController.m */,
+				4E23BEFE17A0688C00FF1906 /* BasicInfoViewController.h */,
+				4E23BEFF17A0688C00FF1906 /* BasicInfoViewController.m */,
+				4E23BF0117A0689F00FF1906 /* SkyViewController.h */,
+				4E23BF0217A0689F00FF1906 /* SkyViewController.m */,
+				4E23BF0417A06B6C00FF1906 /* StopBangViewController.h */,
+				4E23BF0517A06B6C00FF1906 /* StopBangViewController.m */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+		4E23BEEA17A0275700FF1906 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEEB17A0278600FF1906 /* UISimpleTextField.h */,
+				4E23BEEC17A0278600FF1906 /* UISimpleTextField.m */,
+				4E23BEEE17A02E7D00FF1906 /* UISimpleButton.h */,
+				4E23BEEF17A02E7D00FF1906 /* UISimpleButton.m */,
+				4E23BEF417A0380500FF1906 /* UISimpleTableViewCell.h */,
+				4E23BEF517A0380500FF1906 /* UISimpleTableViewCell.m */,
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
+		4E23BEF717A03AD500FF1906 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BEF817A03AEE00FF1906 /* ViewUtil.h */,
+				4E23BEF917A03AEE00FF1906 /* ViewUtil.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		4E23BF0917A0701E00FF1906 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				4E23BF0B17A0AB4C00FF1906 /* DRNRealTimeBlurView.h */,
+				4E23BF0C17A0AB4C00FF1906 /* DRNRealTimeBlurView.m */,
+				4E23BF0D17A0AB4C00FF1906 /* UIImage+BoxBlur.h */,
+				4E23BF0E17A0AB4C00FF1906 /* UIImage+BoxBlur.m */,
+				4E23BF0717A0701A00FF1906 /* iCarousel.h */,
+				4E23BF0817A0701A00FF1906 /* iCarousel.m */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E23BEB717A01B8100FF1906 /* sleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E23BEDE17A01B8100FF1906 /* Build configuration list for PBXNativeTarget "sleep" */;
+			buildPhases = (
+				4E23BEB417A01B8100FF1906 /* Sources */,
+				4E23BEB517A01B8100FF1906 /* Frameworks */,
+				4E23BEB617A01B8100FF1906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sleep;
+			productName = sleep;
+			productReference = 4E23BEB817A01B8100FF1906 /* sleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E23BEB017A01B8000FF1906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Marc Fiume";
+			};
+			buildConfigurationList = 4E23BEB317A01B8000FF1906 /* Build configuration list for PBXProject "sleep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4E23BEAF17A01B8000FF1906;
+			productRefGroup = 4E23BEB917A01B8100FF1906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E23BEB717A01B8100FF1906 /* sleep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E23BEB617A01B8100FF1906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E23BEC617A01B8100FF1906 /* InfoPlist.strings in Resources */,
+				4E23BECE17A01B8100FF1906 /* Default.png in Resources */,
+				4E23BED017A01B8100FF1906 /* Default@2x.png in Resources */,
+				4E23BED217A01B8100FF1906 /* Default-568h@2x.png in Resources */,
+				4E23BED517A01B8100FF1906 /* MainStoryboard_iPhone.storyboard in Resources */,
+				4E23BED817A01B8100FF1906 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E23BEB417A01B8100FF1906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E23BF0F17A0AB5300FF1906 /* DRNRealTimeBlurView.m in Sources */,
+				4E23BF1017A0AB5300FF1906 /* UIImage+BoxBlur.m in Sources */,
+				4E23BF0A17A0709100FF1906 /* iCarousel.m in Sources */,
+				4E23BEC817A01B8100FF1906 /* main.m in Sources */,
+				4E23BECC17A01B8100FF1906 /* AppDelegate.m in Sources */,
+				4E23BEDB17A01B8100FF1906 /* ViewController.m in Sources */,
+				4E23BEE417A01CF800FF1906 /* LoginViewController.m in Sources */,
+				4E23BEED17A0278600FF1906 /* UISimpleTextField.m in Sources */,
+				4E23BEF017A02E7D00FF1906 /* UISimpleButton.m in Sources */,
+				4E23BEF317A036DC00FF1906 /* CreateAccountBasicInfoViewController.m in Sources */,
+				4E23BEF617A0380500FF1906 /* UISimpleTableViewCell.m in Sources */,
+				4E23BEFA17A03AEE00FF1906 /* ViewUtil.m in Sources */,
+				4E23BEFD17A03BC600FF1906 /* HomeViewController.m in Sources */,
+				4E23BF0017A0688C00FF1906 /* BasicInfoViewController.m in Sources */,
+				4E23BF0317A0689F00FF1906 /* SkyViewController.m in Sources */,
+				4E23BF0617A06B6D00FF1906 /* StopBangViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E23BEC417A01B8100FF1906 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E23BEC517A01B8100FF1906 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4E23BED317A01B8100FF1906 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E23BED417A01B8100FF1906 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4E23BED617A01B8100FF1906 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E23BED717A01B8100FF1906 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E23BEDC17A01B8100FF1906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E23BEDD17A01B8100FF1906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E23BEDF17A01B8100FF1906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sleep/sleep-Prefix.pch";
+				INFOPLIST_FILE = "sleep/sleep-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4E23BEE017A01B8100FF1906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sleep/sleep-Prefix.pch";
+				INFOPLIST_FILE = "sleep/sleep-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E23BEB317A01B8000FF1906 /* Build configuration list for PBXProject "sleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E23BEDC17A01B8100FF1906 /* Debug */,
+				4E23BEDD17A01B8100FF1906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E23BEDE17A01B8100FF1906 /* Build configuration list for PBXNativeTarget "sleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E23BEDF17A01B8100FF1906 /* Debug */,
+				4E23BEE017A01B8100FF1906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E23BEB017A01B8000FF1906 /* Project object */;
+}
